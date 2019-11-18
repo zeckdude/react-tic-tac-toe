@@ -1,0 +1,18 @@
+.field {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 5px;
+  color: #b8b9bb;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  margin: 3px;
+  cursor: pointer;
+}
+
+.highlighted {
+  color: yellow;
+}

@@ -1,0 +1,55 @@
+* {
+  font-family: Lato;
+}
+
+body {
+  margin: 0;
+}
+
+.button {
+  height: 40px;
+  padding: 15px;
+  font-size: 15px;
+  line-height: 0;
+  background-color: white;
+  border: 2px solid #1f5c9e;
+  color: #1f5c9e;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  outline: none;
+}
+
+.button:hover, .button.selected {
+  background-color: #1f5c9e;
+  color: white;
+}
+
+.first-game-choice-button {
+  margin-right: 20px;
+}
+
+input {
+  height: 35px;
+  padding: 0 10px;
+  font-size: 15px;
+  line-height: 0;
+  background-color: white;
+  border: 2px solid #1f5c9e;
+  color: #1f5c9e;
+  transition: all 0.15s ease;
+  outline: none;
+  margin-left: 10px;
+}
+
+.name-entry {
+  margin-top: 30px;
+}
+
+.name-entry div:first-of-type {
+  margin-bottom: 20px;
+}
+
+.start-game-button {
+  margin-top: 40px;
+}
+
