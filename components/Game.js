@@ -23,9 +23,7 @@ function Game({ players, resetGameOptions }) {
   }
 
   useEffect(() => {
-    console.log('1');
     if (players) {
-      console.log('2');
       setInstructions(`${players[activePlayer].name}'s turn`);
     }
 

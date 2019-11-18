@@ -8,15 +8,9 @@ function Board({ rows, setFieldValue, highlightedFields }) {
     return rows.map((row, rowIndex) => (
       <div className="row">{row.map((field, columnIndex) => {
         const isHighlightedField = highlightedFields.some(highlightedField => highlightedField.rowIndex === rowIndex && highlightedField.columnIndex === columnIndex);
-        return <Field value={field} isHighlighted={isHighlightedField} setFieldValue={setFieldValue(rowIndex, columnIndex)} />;
+        return <Field key={`row-${rowIndex}-column-${columnIndex}`} value={field} isHighlighted={isHighlightedField} setFieldValue={setFieldValue(rowIndex, columnIndex)} />;
       })}</div>
     ));
-
-    // return (
-    //     <div className="row"><Field /><Field /><Field /></div>
-    //     <div className="row"><Field /><Field /><Field /></div>
-    //     <div className="row"><Field /><Field /><Field /></div>
-    // );
   }
 
   return (
